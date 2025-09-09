@@ -138,7 +138,7 @@ export default function ContactForm() {
           <ListArray heading="Services" items={["Main", "Projects", "Portfolio", "About us", "Contact us", "News"]} />
 
           <div className="">
-            <p>©2025 All rights reserved. Noor</p>
+            <p>©2025 All rights reserved. Omar</p>
             <p>Developed by the Me</p>
           </div>
         </MaxWidthWrapper>

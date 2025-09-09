@@ -67,17 +67,14 @@ const HorizontalScroll = ({ items, paragraph }: { items: any[]; paragraph?: stri
         <InfinteTitle text="My" /> Services
       </TypographyH1>
       <TypographyP className=" max-w-lg text-black dark:text-gray-50">{paragraph}</TypographyP>
-      <div className={`flex w-${items.length * 100} flex-nowrap  h-screen`}>
+      <div className={`flex w-${items.length * 100} flex-nowrap   h-44`}>
         {items.map((item: any, index: number) => (
           <MaxWidthWrapper
             noPadding
             key={index}
             className="flex  lg:flex-row flex-col !pl-0 panel w-screen text-white "
           >
-            <div
-              
-              className="flex innersection flex-col -translate-y-14 opacity-0 gap-6 w-full lg:w-1/2"
-            >
+            <div className="flex innersection flex-col -translate-y-14 opacity-0 gap-6 w-full lg:w-1/2">
               <p className="stroke-text text-[100px] lg:text-[140px] leading-none font-extrabold">
                 <span className=" ">0</span>
                 {index + 1}
@@ -85,14 +82,6 @@ const HorizontalScroll = ({ items, paragraph }: { items: any[]; paragraph?: stri
               <TypographyH2 className=" text-3xl lg:text-6xl text-black dark:text-white -mt-8 font-bold">
                 {item.title || "add the title of your services "}
               </TypographyH2>
-              <TypographyP className=" text-sm lg:text-lg text-black dark:text-gray-300">
-                {item.description || "add any description you want here boi !"}
-              </TypographyP>
-            </div>
-
-            {/* Right Image */}
-            <div className="relative h-[80vh] w-full lg:w-1/2">
-              <Image fill className="object-contain slideimg" src={item.img} alt={item.alt || "Image"} />
             </div>
           </MaxWidthWrapper>
         ))}{" "}

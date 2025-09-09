@@ -31,7 +31,7 @@ const NavBar = () => {
                 </li>
               ))}
             </ul>
-            <a href="/cv.pdf" download="Noor-Hesham-cv">
+            <a href="/cv.pdf" download="omar-cv">
               <Button className=" text-sm">Download CV</Button>
             </a>
             <div className="  lg:hidden block">
