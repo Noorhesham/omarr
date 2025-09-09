@@ -36,10 +36,10 @@ export default function RootLayout({
     <html lang="en">
       <body className={`${inter.className} antialiased`}>
         {" "}
-        <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
+        <ThemeProvider attribute="class" defaultTheme="dark" enableSystem>
           <>
             <NavBar />
-            <main className=" overflow-hidden">
+            <main className="dark overflow-hidden">
               {children}
 
               <Footer />

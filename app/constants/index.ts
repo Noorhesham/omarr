@@ -4,7 +4,7 @@ export const ServiceId = "service_kxdhvdb";
 export const Template = "template_3i15jgb";
 export const PUBLI_KEY = ""; //ضيف ال key  account settings in email js webiste !
 export const LOGOPATH = "/Hollow-Knight-Background-PNG-Image.png";
-export const LOGOTEXT = "NOOR";
+export const LOGOTEXT = "Omar";
 // الشركات مثلا او التيكنولوجيز
 export const TECH = ["/ts.svg"];
 export const MAINCOLOR = "#ff3d00";

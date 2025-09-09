@@ -8,7 +8,7 @@ import MaxWidthWrapper from "./component/MaxWidthWrapper";
 import OverlappingSlider from "./component/Overlapslider";
 import AboutMe from "./component/AboutMe";
 import Hero2 from "./component/Hero2";
-const { projects, projects2, SERVICES, TECH, animationProjcets2 } = constants;
+const { projects,SERVICES, TECH,  } = constants;
 /*
 hero section
 tech stack
@@ -64,33 +64,18 @@ export default function Home() {
       */}
       <HeroSection
         videoFallbackSrc="/hell-foto.png.webp"
-        title="Hey my name is noor"
-        subtitle="i am backend developer"
+        title="Hey my name is Omar"
+        subtitle="i am AI Engineer"
         buttonText="Contact use"
         mediaSrc="/hell.mp4"
         mediaType="video"
       />
-      {/*  رقم 2 ده سكشن البداية  */}
-      <Hero2
-        title="Discover the Future"
-        subtitle="Explore immersive gaming experiences with 801 Studio."
-        buttonText="Contact Us"
-        img="/hell-foto.png.webp"
-        mediaPosition="right"
-      />
+  
       <img src="/service-line.png" alt="" />
       <HorizontalScroll paragraph="i am fullstack web developer and i like designing 3d models" items={SERVICES} />
       <img src="/service-line.png" alt="" />
       {/*  حدد العنوان وتقدر تكنسل الانيمشن لو كتبت  cancelAnimation  */}
 
-      <MaxWidthWrapper className="flex relative items-start gap-10 flex-col">
-        <InfinteTitle
-          cancelAnimation={true}
-          className=" text-4xl lg:text-7xl !text-main font-semibold "
-          text="Tech Stack"
-        />
-        <InfiniteTechStack height="h-20" list={TECH} />
-      </MaxWidthWrapper>
 
       {/* ده سكشن اضافه المشاريع 
       types 
@@ -111,33 +96,13 @@ export default function Home() {
         height={" h-44"}
         types={[
           {
-            category: "REALISTIC 3D ENVIRONMENT",
+            category: "My projects",
             items: projects,
           },
         ]}
         title="My projects"
       />
-      <img src="/service-line.png" alt="" />
-      <OverlappingSlider
-        slidesPerView={2}
-        height={" h-44"}
-        types={[
-          {
-            category: "REALISTIC 3D ENVIRONMENT",
-            items: projects,
-          },
-          {
-            category: "Backend",
-            items: projects2,
-          },
-          {
-            category: "Animated Websites",
-            items: projects,
-          },
-          { category: "animated projcets 2", items: animationProjcets2 },
-        ]}
-        title="My Education"
-      />
+
       {/* ده سكشن أنا مين  */}
 
       <AboutMe
